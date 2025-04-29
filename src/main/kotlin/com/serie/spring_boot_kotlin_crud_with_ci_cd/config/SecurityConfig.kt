@@ -18,7 +18,8 @@ class SecurityConfig {
                     "/swagger-ui.html" ,
                     "/api/v1/users",
                     "/products",
-                    "/products/**"
+                    "/products/**",
+                    "/"
                 ).permitAll()
                 it.anyRequest().authenticated() // Secure other endpoints
             }

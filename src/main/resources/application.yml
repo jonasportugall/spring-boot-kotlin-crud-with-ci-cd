@@ -6,7 +6,7 @@ spring:
       mode: always
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:mydatabase}
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:spring_boot_kotlin_with_ci_cd}
     username: ${POSTGRES_USER:postgres}
     password: ${POSTGRES_PASSWORD:root}
     hikari:
