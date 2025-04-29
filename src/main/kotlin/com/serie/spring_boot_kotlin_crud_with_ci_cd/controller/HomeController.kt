@@ -9,7 +9,7 @@ class HomeController {
 
     @GetMapping("/")
     fun welcome():String{
-        return "WELCOME TO THE MY SIMPLE API WITH SPRING BOOT AND KOTLIN"
+        return "WELCOME TO THE MY SIMPLE API WITH SPRING BOOT AND KOTLIN!"
     }
 
 }
