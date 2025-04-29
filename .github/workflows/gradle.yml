@@ -40,4 +40,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Deploy to render
-      run: curl {secrets.RENDER_HOOK}
+      run: curl ${{ secrets.RENDER_HOOK }}
