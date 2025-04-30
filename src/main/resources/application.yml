@@ -1,18 +1,23 @@
 spring:
   application:
     name: spring-boot-kotlin-crud-with-ci-cd
-  sql:
-    init:
-      mode: always
+
   datasource:
     driver-class-name: org.postgresql.Driver
     url: ${DATABASE_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     hikari:
       auto-commit: true
+
   jpa:
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  hibernate:
-    naming:
-      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  sql:
+    init:
+      mode: always
