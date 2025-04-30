@@ -19,7 +19,8 @@ class SecurityConfig {
                     "/api/v1/users",
                     "/products",
                     "/products/**",
-                    "/"
+                    "/",
+                    "/docs"
                 ).permitAll()
                 it.anyRequest().authenticated() // Secure other endpoints
             }
