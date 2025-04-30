@@ -10,8 +10,8 @@ import java.util.*
 @Table(name="products")
 data class Product(
     @Id
-    val id: UUID? = null,
-
+    @Column(columnDefinition = "uuid", updatable = false, nullable = false)
+    val id: UUID = UUID.randomUUID(),
     @Column
     var name:String = "",
 
